@@ -71,7 +71,9 @@ angular.module('mm.core', ['pascalprecht.translate'])
                         $state.go($stateParams.state, $stateParams.params);
                     }, function() {
                         // Site doesn't exist.
+						
                         $state.go('mm_login.sites');
+						
                     });
                 }
 

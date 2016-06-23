@@ -56,7 +56,7 @@ angular.module('mm.core.login', [])
 
     .state('mm_login.credentials', {
         url: '/cred',
-        templateUrl: 'core/components/login/templates/credentials.html',
+        templateUrl: 'core/components/login/templates/credentials2.html',
         controller: 'mmLoginCredentialsCtrl',
         params: {
             siteurl: '',

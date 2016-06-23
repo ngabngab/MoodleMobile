@@ -36,7 +36,7 @@ angular.module('mm.core.login')
         if ($mmSite.isLoggedIn()) {
             $mmLoginHelper.goToSiteInitialPage();
         } else {
-            $mmSitesManager.hasSites().then(function() {
+			$mmSitesManager.hasSites().then(function() {
                 return $state.go('mm_login.sites');
             }, function() {
                 return $mmLoginHelper.goToAddSite();
